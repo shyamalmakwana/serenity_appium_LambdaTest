@@ -42,10 +42,6 @@ public class TelusOnboard extends ScenarioSteps {
     @After
     public void getSessionDetails() {
         String name = scenario.getName();
-        // JavascriptExecutor jse = (JavascriptExecutor)wikipediaApp.getDriver();
-        // jse.executeScript("browserstack_executor: {\"action\": \"setSessionName\", \"arguments\": {\"name\":\""+name+"\" }}");
-        // String status = scenario.getStatus().toString();
-        // jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \""+ status +"\"}}");
 
     }
 }
