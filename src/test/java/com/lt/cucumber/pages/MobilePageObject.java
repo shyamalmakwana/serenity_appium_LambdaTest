@@ -1,4 +1,4 @@
-package com.browserstack.cucumber.pages;
+package com.lt.cucumber.pages;
 
 import com.google.common.base.Predicate;
 import org.openqa.selenium.WebDriver;

@@ -1,8 +1,8 @@
-package com.browserstack.cucumber.steps;
+package com.lt.cucumber.steps;
 
 import org.openqa.selenium.JavascriptExecutor;
 
-import com.browserstack.cucumber.pages.WikipediaApp;
+import com.lt.cucumber.pages.WikipediaApp;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -42,10 +42,10 @@ public class WikipediaSearchSteps extends ScenarioSteps {
     @After
     public void getSessionDetails() {
         String name = scenario.getName();
-        JavascriptExecutor jse = (JavascriptExecutor)wikipediaApp.getDriver();
-        jse.executeScript("browserstack_executor: {\"action\": \"setSessionName\", \"arguments\": {\"name\":\""+name+"\" }}");
-        String status = scenario.getStatus().toString();
-        jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \""+ status +"\"}}");
+        // JavascriptExecutor jse = (JavascriptExecutor)wikipediaApp.getDriver();
+        // jse.executeScript("browserstack_executor: {\"action\": \"setSessionName\", \"arguments\": {\"name\":\""+name+"\" }}");
+        // String status = scenario.getStatus().toString();
+        // jse.executeScript("browserstack_executor: {\"action\": \"setSessionStatus\", \"arguments\": {\"status\": \""+ status +"\"}}");
 
     }
 }

@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.browserstack</groupId>
-    <artifactId>serenity-browserstack</artifactId>
+    <groupId>com.lt</groupId>
+    <artifactId>serenity-lt</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -24,7 +24,6 @@
         <serenity.maven.version>2.6.0</serenity.maven.version>
         <serenity.cucumber.version>2.6.0</serenity.cucumber.version>
         <serenity.junit.version>2.6.0</serenity.junit.version>
-        <browserstack.local.version>1.0.3</browserstack.local.version>
 
         <maven.failsafe-plugin.version>3.0.0-M5</maven.failsafe-plugin.version>
         <maven.surefire-plugin.version>3.0.0-M5</maven.surefire-plugin.version>
@@ -117,11 +116,7 @@
             <version>3.6.2</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.browserstack</groupId>
-            <artifactId>browserstack-local-java</artifactId>
-            <version>${browserstack.local.version}</version>
-        </dependency>
+
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
@@ -158,7 +153,7 @@
                 <version>${maven.failsafe-plugin.version}</version>
                 <configuration>
                     <includes>
-                        <include>com/browserstack/cucumber/SingleTest.java</include>
+                        <include>com/lt/cucumber/SingleTest.java</include>
                     </includes>
                     <reuseForks>true</reuseForks>
                 </configuration>
@@ -205,7 +200,7 @@
                         <version>${maven.failsafe-plugin.version}</version>
                         <configuration>
                             <includes>
-                                <include>com/browserstack/cucumber/Test.java</include>
+                                <include>com/lt/cucumber/Test.java</include>
                             </includes>
                             <reuseForks>true</reuseForks>
                             <systemPropertyVariables>
@@ -228,7 +223,7 @@
                         <version>${maven.failsafe-plugin.version}</version>
                         <configuration>
                             <includes>
-                                <include>com/browserstack/cucumber/Test*.java</include>
+                                <include>com/lt/cucumber/Test*.java</include>
                             </includes>
                             <parallel>methods</parallel>
                             <!-- specify no of parallels here -->

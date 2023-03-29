@@ -1,4 +1,4 @@
-package com.browserstack.cucumber.pages;
+package com.lt.cucumber.pages;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
