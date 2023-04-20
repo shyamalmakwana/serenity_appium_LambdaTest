@@ -1,6 +1,6 @@
 # appium-serenity-lt
 
-[Serenity](http://www.thucydides.info/docs/serenity/) Integration with BrowserStack for Appium.
+[Serenity](http://www.thucydides.info/docs/serenity/) Integration with LambdaTest for Appium.
 
 Master branch contains **Selenium 3** samples, for **Selenium 4 - W3C protocol** please checkout [selenium-4](https://github.com/lt/serenity-lt/tree/selenium-4) branch
 
